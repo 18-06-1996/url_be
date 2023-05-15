@@ -1,6 +1,6 @@
 const express= require('express')
 const jwt= require('jsonwebtoken')
-const userModel = require('../model/userschema');
+const {userModel} = require('../model/userschema');
 const nodemailer = require('nodemailer')
 
 const { hashPassword, hashCompare ,adminGaurd, createToken, authenticate ,validation} = require('../common/auth');
@@ -249,4 +249,4 @@ router.delete("/delete/:id",adminGaurd,async(req,res)=>{
 
 
 
-module.exports=router
+module.exports=router;

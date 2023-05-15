@@ -20,6 +20,7 @@
     "nodemailer": "^6.9.2",
     "nodemon": "^2.0.22",
     "shortid": "^2.2.16",
+    "typescript": "^5.0.4",
     "validator": "^13.9.0"
   }
 }

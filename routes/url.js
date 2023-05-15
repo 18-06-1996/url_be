@@ -1,7 +1,8 @@
 const express = require('express')
 
 const url_router=express.Router();
-const urlModel = require('../model/urlschema');
+
+const {urlModel} = require('../model/urlschema');
 
 const {generateNewshortUrl,handleclicks}= require('../controller/Url')
 
@@ -30,4 +31,4 @@ url_router.get("/:shortId",async(req,res)=>{
 
 url_router.get("/click/:shortId",handleclicks);
 
-module.exports=url_router
+module.exports= url_router

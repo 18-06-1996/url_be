@@ -24,4 +24,4 @@ const urlSchema= mongoose.Schema({
 )
 
 const urlModel= mongoose.model('urlshorts',urlSchema)
-module.exports= urlModel
+module.exports= {urlModel}
